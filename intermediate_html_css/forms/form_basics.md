@@ -6,12 +6,12 @@ You need to specify the proper types of inputs for each possible data item since
 
 In this lesson, we will explore the basics of HTML forms and some of the different types of inputs available to you.
 
-### Lesson overview
+### Lesson overviewdsadsjdslajl
 
 This section contains a general overview of topics that you will learn in this lesson.
 
-- Create forms with HTML.
-- Have a basic idea of how to style forms.
+-   Create forms with HTML.
+-   Have a basic idea of how to style forms.
 
 ### The form element
 
@@ -23,16 +23,14 @@ Later in the curriculum, we will learn to hook backend systems up to frontend fo
 The second is the `method` attribute which tells the browser [which HTTP request method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) it should use to submit the form.
 The GET and POST request methods are the two you will find yourself using the most.
 
-We use GET when we want to retrieve something from a server. For example, Google uses a GET request when you search as it *gets* the search results.
+We use GET when we want to retrieve something from a server. For example, Google uses a GET request when you search as it _gets_ the search results.
 
 POST is used when we want to change something on the server, for example, when a user makes an account or makes a payment on a website.
 
 The markup for creating a form element looks like this:
 
 ```html
-<form action="example.com/path" method="post">
-
-</form>
+<form action="example.com/path" method="post"></form>
 ```
 
 ### Form controls
@@ -41,13 +39,13 @@ To start collecting user data, we need to use form control elements. These are a
 
 ### The input element
 
-The input element is the most versatile of all the form control elements. It accepts a `type` attribute which tells the browser what *type* of data it should expect and how it should render the input element.
+The input element is the most versatile of all the form control elements. It accepts a `type` attribute which tells the browser what _type_ of data it should expect and how it should render the input element.
 
 A text input looks like this:
 
 ```html
 <form action="example.com/path" method="post">
-  <input type="text">
+    <input type="text" />
 </form>
 ```
 
@@ -61,8 +59,8 @@ To create a label, we use the `<label>` element. The text we want displayed in t
 
 ```html
 <form action="example.com/path" method="post">
-  <label for="first_name">First Name:</label>
-  <input type="text" id="first_name">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" />
 </form>
 ```
 
@@ -74,11 +72,11 @@ When a label is associated with an input and is clicked, it will focus the curso
 
 To guide users on what to enter in form elements, we can include placeholder text in input fields.
 
-This is done by adding a `placeholder` attribute to an input. The value will be the *placeholder* text we want to display in the input:
+This is done by adding a `placeholder` attribute to an input. The value will be the _placeholder_ text we want to display in the input:
 
 ```html
 <label for="first_name">First Name:</label>
-<input type="text" id="first_name" placeholder="Bob...">
+<input type="text" id="first_name" placeholder="Bob..." />
 ```
 
 Use placeholder text to demonstrate how text should be entered and formatted.
@@ -90,8 +88,7 @@ We need to use labels so that users understand what the data entered into an inp
 We do this by adding a `name` attribute to our inputs:
 
 ```html
-<label for="first_name">First Name:</label>
-<input type="text" id="first_name" name="first_name">
+<label for="first_name">First Name:</label> <input type="text" id="first_name" name="first_name" />
 ```
 
 The `name` attribute serves as a reference to the data inputted into a form control after submitting it. You can think of it as a variable name for the input. Form input should always have a `name` attribute; otherwise, it will be ignored when the form is submitted.
@@ -100,9 +97,9 @@ To get a better understanding of what this looks like we can submit a form to [h
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="dyVRMbq" data-preview="true" data-editable="true" data-user="TheOdinProjectExamples" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 
-  <span>See the Pen <a href="https://codepen.io/TheOdinProjectExamples/pen/dyVRMbq">
-  form-basics-name-attribute</a> by TheOdinProject (<a href="https://codepen.io/TheOdinProjectExamples">@TheOdinProjectExamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
+<span>See the Pen <a href="https://codepen.io/TheOdinProjectExamples/pen/dyVRMbq">
+form-basics-name-attribute</a> by TheOdinProject (<a href="https://codepen.io/TheOdinProjectExamples">@TheOdinProjectExamples</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
 
 </p>
 
@@ -128,9 +125,9 @@ For example you might want to have an input that gets some data from a user and 
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="PoJjNYr" data-preview="true" data-editable="true" data-user="TheOdinProjectExamples" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 
-  <span>See the Pen <a href="https://codepen.io/TheOdinProjectExamples/pen/PoJjNYr">
-  using-form-controls-outside-of-form</a> by TheOdinProject (<a href="https://codepen.io/TheOdinProjectExamples">@TheOdinProjectExamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
+<span>See the Pen <a href="https://codepen.io/TheOdinProjectExamples/pen/PoJjNYr">
+using-form-controls-outside-of-form</a> by TheOdinProject (<a href="https://codepen.io/TheOdinProjectExamples">@TheOdinProjectExamples</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
 
 </p>
 
@@ -148,16 +145,16 @@ To create an email input, we use an input element with `type` attribute of "emai
 
 ```html
 <label for="user_email">Email Address:</label>
-<input type="email" id="user_email" name="email" placeholder="you@example.com">
+<input type="email" id="user_email" name="email" placeholder="you@example.com" />
 ```
 
-`Password inputs` are another specialized text input. They differ from regular text inputs in that they mask the inputted data with another character – usually an asterisk (*) or bullet point (•) – to prevent anyone from seeing what has been entered.
+`Password inputs` are another specialized text input. They differ from regular text inputs in that they mask the inputted data with another character – usually an asterisk (\*) or bullet point (•) – to prevent anyone from seeing what has been entered.
 
 A password input can be created using an input element with a type of "password":
 
 ```html
 <label for="user_password">Password:</label>
-<input type="password" id="user_password" name="password">
+<input type="password" id="user_password" name="password" />
 ```
 
 The `number input` only accepts number values and ignores any other characters the user tries to enter.
@@ -165,8 +162,7 @@ The `number input` only accepts number values and ignores any other characters t
 We create a number input using the input element with a `type` attribute of "number":
 
 ```html
-<label for="amount">Amount:</label>
-<input type="number" id="amount" name="amount">
+<label for="amount">Amount:</label> <input type="number" id="amount" name="amount" />
 ```
 
 To collect dates from a user, we can use a `date input`. This input is unique because it provides a better user experience for choosing dates by rendering a date picker calendar.
@@ -174,8 +170,7 @@ To collect dates from a user, we can use a `date input`. This input is unique be
 To create a date input, we use the input element with a `type` attribute of "date":
 
 ```html
-<label for="dob">Date of Birth:</label>
-<input type="date" id="dob" name="dob">
+<label for="dob">Date of Birth:</label> <input type="date" id="dob" name="dob" />
 ```
 
 #### Text area
@@ -212,12 +207,12 @@ To create a select dropdown, we use the `<select>` element. Any options we want 
 
 ```html
 <select name="Car">
-  <option value="mercedes">Mercedes</option>
-  <option value="tesla">Tesla</option>
-  <option value="volvo">Volvo</option>
-  <option value="bmw">BMW</option>
-  <option value="mini">Mini</option>
-  <option value="ford">Ford</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="tesla">Tesla</option>
+    <option value="volvo">Volvo</option>
+    <option value="bmw">BMW</option>
+    <option value="mini">Mini</option>
+    <option value="ford">Ford</option>
 </select>
 ```
 
@@ -227,12 +222,12 @@ We can set one of the options to be the default selected element when the browse
 
 ```html
 <select name="Car">
-  <option value="mercedes">Mercedes</option>
-  <option value="tesla">Tesla</option>
-  <option value="volvo" selected>Volvo</option>
-  <option value="bmw">BMW</option>
-  <option value="mini">Mini</option>
-  <option value="ford">Ford</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="tesla">Tesla</option>
+    <option value="volvo" selected>Volvo</option>
+    <option value="bmw">BMW</option>
+    <option value="mini">Mini</option>
+    <option value="ford">Ford</option>
 </select>
 ```
 
@@ -240,16 +235,16 @@ We may also split the list of options into groups using the `<optgroup>` element
 
 ```html
 <select name="fashion">
-  <optgroup label="Clothing">
-    <option value="t_shirt">T-Shirts</option>
-    <option value="sweater">Sweaters</option>
-    <option value="coats">Coats</option>
-  </optgroup>
-  <optgroup label="Foot Wear">
-    <option value="sneakers">Sneakers</option>
-    <option value="boots">Boots</option>
-    <option value="sandals">Sandals</option>
-  </optgroup>
+    <optgroup label="Clothing">
+        <option value="t_shirt">T-Shirts</option>
+        <option value="sweater">Sweaters</option>
+        <option value="coats">Coats</option>
+    </optgroup>
+    <optgroup label="Foot Wear">
+        <option value="sneakers">Sneakers</option>
+        <option value="boots">Boots</option>
+        <option value="sandals">Sandals</option>
+    </optgroup>
 </select>
 ```
 
@@ -262,18 +257,18 @@ In this case, we can use radio buttons. Radio buttons allow us to create multipl
 ```html
 <h1>Ticket Type</h1>
 <div>
-  <input type="radio" id="child" name="ticket_type" value="child">
-  <label for="child">Child</label>
+    <input type="radio" id="child" name="ticket_type" value="child" />
+    <label for="child">Child</label>
 </div>
 
 <div>
-  <input type="radio" id="adult" name="ticket_type" value="adult">
-  <label for="adult">Adult</label>
+    <input type="radio" id="adult" name="ticket_type" value="adult" />
+    <label for="adult">Adult</label>
 </div>
 
 <div>
-  <input type="radio" id="senior" name="ticket_type" value="senior">
-  <label for="senior">Senior</label>
+    <input type="radio" id="senior" name="ticket_type" value="senior" />
+    <label for="senior">Senior</label>
 </div>
 ```
 
@@ -284,18 +279,18 @@ We can set the default selected radio button by adding the `checked` attribute t
 ```html
 <h1>Ticket Type</h1>
 <div>
-  <input type="radio" id="child" name="ticket_type" value="child">
-  <label for="child">Child</label>
+    <input type="radio" id="child" name="ticket_type" value="child" />
+    <label for="child">Child</label>
 </div>
 
 <div>
-  <input type="radio" id="adult" name="ticket_type" value="adult" checked>
-  <label for="adult">Adult</label>
+    <input type="radio" id="adult" name="ticket_type" value="adult" checked />
+    <label for="adult">Adult</label>
 </div>
 
 <div>
-  <input type="radio" id="senior" name="ticket_type" value="senior">
-  <label for="senior">Senior</label>
+    <input type="radio" id="senior" name="ticket_type" value="senior" />
+    <label for="senior">Senior</label>
 </div>
 ```
 
@@ -309,23 +304,23 @@ To create a checkbox, we use the input element with a `type` attribute of "check
 <h1>Pizza Toppings</h1>
 
 <div>
-  <input type="checkbox" id="sausage" name="topping" value="sausage">
-  <label for="sausage">Sausage</label>
+    <input type="checkbox" id="sausage" name="topping" value="sausage" />
+    <label for="sausage">Sausage</label>
 </div>
 
 <div>
-  <input type="checkbox" id="onions" name="topping" value="onions">
-  <label for="onions">Onions</label>
+    <input type="checkbox" id="onions" name="topping" value="onions" />
+    <label for="onions">Onions</label>
 </div>
 
 <div>
-  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-  <label for="pepperoni">Pepperoni</label>
+    <input type="checkbox" id="pepperoni" name="topping" value="pepperoni" />
+    <label for="pepperoni">Pepperoni</label>
 </div>
 
 <div>
-  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-  <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" id="mushrooms" name="topping" value="mushrooms" />
+    <label for="mushrooms">Mushrooms</label>
 </div>
 ```
 
@@ -333,8 +328,8 @@ We can also have a single checkbox when we want users to toggle if they want som
 
 ```html
 <div>
-  <input type="checkbox" id="newsletter" name="news_letter">
-  <label for="newsletter">Send me the news letter</label>
+    <input type="checkbox" id="newsletter" name="news_letter" />
+    <label for="newsletter">Send me the news letter</label>
 </div>
 ```
 
@@ -342,8 +337,8 @@ We can set checkboxes to be checked by default on page load by giving them a `ch
 
 ```html
 <div>
-  <input type="checkbox" id="newsletter" name="news_letter" checked>
-  <label for="newsletter">Send me the news letter</label>
+    <input type="checkbox" id="newsletter" name="news_letter" checked />
+    <label for="newsletter">Send me the news letter</label>
 </div>
 ```
 
@@ -409,11 +404,11 @@ To create a fieldset, we use the `<fieldset>` element. Whatever form inputs we w
 
 ```html
 <fieldset>
-  <label for="first_name">First Name</label>
-  <input type="text" id="first_name" name="first_name">
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" />
 
-  <label for="last_name">Last Name</label>
-  <input type="text" id="last_name" name="last_name">
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" />
 </fieldset>
 ```
 
@@ -425,29 +420,29 @@ To create a legend, we use the `<legend>` element with the text we want to displ
 
 ```html
 <fieldset>
-  <legend>Contact Details</legend>
+    <legend>Contact Details</legend>
 
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
 
-  <label for="phone_number">Phone Number:</label>
-  <input type="tel" id="phone_number" name="phone_number">
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number" />
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
 </fieldset>
 
 <fieldset>
-  <legend>Delivery Details</legend>
+    <legend>Delivery Details</legend>
 
-  <label for="street_address">Street Address:</label>
-  <input type="text" id="street_address" name="street_address">
+    <label for="street_address">Street Address:</label>
+    <input type="text" id="street_address" name="street_address" />
 
-  <label for="city">City:</label>
-  <input type="text" id="city" name="city">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" />
 
-  <label for="zip_code">Zip Code:</label>
-  <input type="text" id="zip_code" name="zip_code">
+    <label for="zip_code">Zip Code:</label>
+    <input type="text" id="zip_code" name="zip_code" />
 </fieldset>
 ```
 
@@ -455,22 +450,22 @@ A common use-case for these elements is using a fieldset to group radio buttons 
 
 ```html
 <fieldset>
-  <legend>What would you like to drink?</legend>
+    <legend>What would you like to drink?</legend>
 
-  <div>
-    <input type="radio" name="drink" id="coffee" value="coffee">
-    <label for="coffee">Coffee</label>
-  </div>
+    <div>
+        <input type="radio" name="drink" id="coffee" value="coffee" />
+        <label for="coffee">Coffee</label>
+    </div>
 
-  <div>
-    <input type="radio" name="drink" id="tea" value="tea">
-    <label for="tea">Tea</label>
-  </div>
+    <div>
+        <input type="radio" name="drink" id="tea" value="tea" />
+        <label for="tea">Tea</label>
+    </div>
 
-  <div>
-    <input type="radio" name="drink" id="soda" value="soda">
-    <label for="soda">Soda</label>
-  </div>
+    <div>
+        <input type="radio" name="drink" id="soda" value="soda" />
+        <label for="soda">Soda</label>
+    </div>
 </fieldset>
 ```
 
@@ -512,15 +507,15 @@ Certain aspects of other elements are downright impossible to style, for example
 
 The following questions are an opportunity to reflect on key topics in this lesson. If you can't answer a question, click on it to review the material, but keep in mind you are not expected to memorize or master this knowledge.
 
-- [Explain what the form element is for and what two attributes it should always include.](#the-form-element)
-- [Explain what form controls are at a high level.](#form-controls)
-- [What is the `name` attribute for?](#the-name-attribute)
-- [What are the three most common form controls you can use for allowing users to select predefined options?](#selection-elements)
-- [What are the three types of buttons in HTML?](#buttons)
-- [What are the two most challenging aspects of styling forms?](#a-note-on-styling-forms)
+-   [Explain what the form element is for and what two attributes it should always include.](#the-form-element)
+-   [Explain what form controls are at a high level.](#form-controls)
+-   [What is the `name` attribute for?](#the-name-attribute)
+-   [What are the three most common form controls you can use for allowing users to select predefined options?](#selection-elements)
+-   [What are the three types of buttons in HTML?](#buttons)
+-   [What are the two most challenging aspects of styling forms?](#a-note-on-styling-forms)
 
 ### Additional resources
 
 This section contains helpful links to related content. It isn't required, so consider it supplemental.
 
-- [Web.dev's Form Course](https://web.dev/learn/forms/)
+-   [Web.dev's Form Course](https://web.dev/learn/forms/)
